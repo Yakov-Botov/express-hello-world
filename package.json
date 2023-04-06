@@ -6,6 +6,8 @@
   "scripts": {
     "serve": "nodemon --watch . server.js",
     "start": "node server.js",
+    "scss:build": "sass styles:public/styles",
+    "scss:watch": "sass --watch styles:public/styles",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,6 +24,8 @@
     "express": "^4.17.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.12"
+    "nodemon": "^2.0.12",
+    "prettier": "^2.8.7",
+    "sass": "^1.60.0"
   }
 }
